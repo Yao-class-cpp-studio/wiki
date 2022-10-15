@@ -1,0 +1,45 @@
+/**
+ * Reference:
+ * https://github.com/facelessuser/pymdown-extensions/blob/main/docs/src/scss/_material.scss
+ */
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: rgb(21, 23, 29);
+    --md-footer-bg-color: transparent;
+    --md-footer-bg-color--dark: var(--md-default-bg-color--darkest);
+
+    --md-header-fg-color: var(--md-text-color);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+    color: var(--md-text-color);
+    backdrop-filter: blur(8px);
+    background-color: rgba(21, 23, 29, .6);
+    border-bottom: 0.01rem solid var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] .md-header {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, .3);
+}
+
+[data-md-color-scheme="slate"] .md-header[data-md-state=shadow] {
+    box-shadow: 0 0 0.04rem rgba(0, 0, 0, .15),
+        0 0 0.04rem 0.08rem rgba(0, 0, 0, .2);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+    color: rgba(248, 248, 242, 0.87);
+    background-color: hsla(265, 89%, 78%, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link--active {
+    color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link:hover {
+    color: var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+    border-top: 0.01rem solid var(--md-primary-fg-color);
+}

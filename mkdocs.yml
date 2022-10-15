@@ -1,0 +1,52 @@
+site_name: Yao Class C++ Studio
+repo_url: https://github.com/yao-class-cpp-studio/wiki
+edit_uri: edit/main/docs/
+plugins:
+  - search:
+      lang:
+        - en
+        - ja
+# dev_addr: 0.0.0.0:8000
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Using dark mode
+      primary: deep purple
+      accent: deep purple
+    - scheme: default
+      primary: white
+      toggle:
+        icon: material/weather-sunny
+        name: Using light mode
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.instant
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.critic
+  - footnotes
+  - meta
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+extra_css:
+  - assets/css/styles.css
+nav:
+  - Home: README.md
