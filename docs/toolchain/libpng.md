@@ -4,7 +4,7 @@
 
 1. `#include`能找到`png.h`，因此需要加入include directories设定；
 2. 链接（link）的时候能找到`libpng.o`（或其他后缀）；
-3. 如果是动态链接，还要能找到`libpng.so`或`libpng.dll`动态链接库。
+3. 如果是动态链接，还要在运行时能找到`libpng.so`或`libpng.dll`动态链接库。
 
 这一系列操作可以手动完成，也可以用包管理器+CMake自动配环境。
 CMake搜索库的位置主要依靠`find_package()`函数实现，该函数需要正确安装libpng到常用位置。
