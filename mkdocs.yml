@@ -50,6 +50,13 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 extra_css:
   - assets/css/styles.css
+  - https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js
+  - https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/addons/fit/fit.min.js
+  - assets/js/wasm-clang/shared.js
+  - assets/js/cpp_runner.js
 nav:
   - Home: README.md
   - Toolchain:
