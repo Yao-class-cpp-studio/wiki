@@ -23,10 +23,12 @@ theme:
         name: Using light mode
   icon:
     repo: fontawesome/brands/github
+    logo: material/language-cpp
   features:
     - navigation.tabs
     - navigation.indexes
     - navigation.instant
+    - content.tabs.link
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -50,3 +52,8 @@ extra_css:
   - assets/css/styles.css
 nav:
   - Home: README.md
+  - Toolchain:
+    - 编译器: toolchain/compiler.md
+    - git: toolchain/git.md
+    - CMake: toolchain/cmake.md
+    - libpng: toolchain/libpng.md
