@@ -27,7 +27,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.indexes
-    - navigation.instant
     - content.tabs.link
 markdown_extensions:
   - admonition
