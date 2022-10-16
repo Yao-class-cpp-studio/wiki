@@ -64,13 +64,13 @@ Fall 2022, Instructor: Huanchen Zhang
 <td>5</td><td>10/11</td><td>Encapsulation, Object, Class, Constructor, Destructor, Member Function, Overloading</td><td></td>
 </tr>
 <tr markdown>
-<td>6</td><td>10/18</td><td>Recursion, Dynamic Memory Allocations, Garbage Collection</td><td markdown>Assignment 3 `due 11/1`</td>
+<td>6</td><td>10/18</td><td>Inheritance and Polymorphism, Template, STL</td><td markdown>Assignment 3 `due 11/1`</td>
 </tr>
 <tr>
-<td>7</td><td>10/25</td><td>Inheritance and Polymorphism, Template, STL</td><td></td>
+<td>7</td><td>10/25</td><td>Miscellaneous (Type Cast, Friends, Exception, etc.), Modern C++ (C++ 11 and beyond), Writing Effective C++, Coding Style, Coding Habits</td><td></td>
 </tr>
 <tr markdown>
-<td>8</td><td>11/1</td><td>Inheritance and Polymorphism, Template, STL</td><td markdown>Assignment 4 `due 11/15`</td>
+<td>8</td><td>11/1</td><td>Code Performance</td><td markdown>Assignment 4 `due 11/15`</td>
 </tr>
 <tr markdown>
 <td>9-15</td><td></td><td>Coding Projects + Discussion Sessions</td><td>Project 1 & 2</td>
