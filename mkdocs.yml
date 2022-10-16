@@ -58,6 +58,8 @@ extra_javascript:
   - assets/js/cpp_runner.js
 nav:
   - Home: README.md
+  - Lectures:
+    - "01 Intro to C": lectures/01.md
   - Toolchain:
     - 编译器: toolchain/compiler.md
     - git: toolchain/git.md

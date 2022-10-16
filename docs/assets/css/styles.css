@@ -12,12 +12,14 @@
 
 [data-md-color-scheme="slate"] .md-header {
     color: var(--md-text-color);
+    z-index: 10;
     backdrop-filter: blur(8px);
     background-color: rgba(21, 23, 29, .6);
     border-bottom: 0.01rem solid var(--md-primary-fg-color);
 }
 
 [data-md-color-scheme="default"] .md-header {
+    z-index: 10;
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, .3);
 }
