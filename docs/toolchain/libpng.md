@@ -45,6 +45,7 @@ CMake搜索库的位置主要依靠`find_package()`函数实现，该函数需�
     4. 打开Visual Studio并打开`png`文件夹，这时候应该能直接编译通过。
 
     如果还没编译通过：
+
     1. 检查`CMakeLists.txt`是否为最初的版本；
     2. 在Visual Studio的文件列表中，右键`CMakeLists.txt`，删除缓存并重新配置；
     3. 再仔细读一遍以上文档，看是否有要求未满足。
