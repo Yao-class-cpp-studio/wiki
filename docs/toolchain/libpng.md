@@ -19,25 +19,25 @@ CMake搜索库的位置主要依靠`find_package()`函数实现，该函数需�
     2. 安装[vcpkg](https://github.com/microsoft/vcpkg)。可以用`git clone`下载或从网页上下载压缩包，然后解压到一个**不含中文**的路径。
     3. 打开`cmd`或`powershell`，切换到vcpkg目录下：
 
-        ```cmd
+        ```
         cd vcpkg
         ```
 
         执行安装脚本：
 
-        ```cmd
+        ```
         .\bootstrap-vcpkg.bat
         ```
 
         安装libpng：
 
-        ```cmd 
+        ``` 
         .\vcpkg install libpng:x64-windows
         ```
 
         让Visual Studio能搜索到vcpkg安装的包：
 
-        ```cmd
+        ```
         .\vcpkg integrate install
         ```
 
