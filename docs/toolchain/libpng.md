@@ -22,18 +22,25 @@ CMake搜索库的位置主要依靠`find_package()`函数实现，该函数需�
         ```cmd
         cd vcpkg
         ```
+
         执行安装脚本：
+
         ```cmd
         .\bootstrap-vcpkg.bat
         ```
+
         安装libpng：
+
         ```cmd 
         .\vcpkg install libpng:x64-windows
         ```
+
         让Visual Studio能搜索到vcpkg安装的包：
+
         ```cmd
         .\vcpkg integrate install
         ```
+
         因为网络问题这些命令不总是会成功，**请确认以上每一行运行后都没有错误**。
     4. 打开Visual Studio并打开`png`文件夹，这时候应该能直接编译通过。
 
