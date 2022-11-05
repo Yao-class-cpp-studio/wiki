@@ -10,3 +10,8 @@
 * Functor
     * LNK2038 / LNK2005: 检测到“RuntimeLibrary”的不匹配项：值“MTd_StaticDebug”不匹配值“MDd_DynamicDebug”
         * 在`CMakeLists.txt`第六行添加一行`set(gtest_force_shared_crt on)`
+    * C4716: “fuse”: 必须返回一个值
+        * 在`reduce_pow_test.cpp`第10行后添加一行
+            ```cpp
+            return [=](Functor a) { return a; };
+            ```
