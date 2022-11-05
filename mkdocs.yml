@@ -60,8 +60,11 @@ nav:
   - Home: README.md
   - Lectures:
     - "01 Intro to C": lectures/01.md
+    - "02 C Basics": lectures/02.md
   - Toolchain:
     - 编译器: toolchain/compiler.md
     - git: toolchain/git.md
     - CMake: toolchain/cmake.md
     - libpng: toolchain/libpng.md
+  - Assignments:
+    - Assignment 4: assignments/assignment-4.md
