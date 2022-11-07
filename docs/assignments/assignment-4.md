@@ -1,5 +1,10 @@
 # Assignment 4 FAQ
 
+## 测试问题
+
+* Tensor
+    * `tensor_test.cpp`的105、106、108行`[2]`均改为`[1]`.
+
 ## Visual Studio相关编译问题
 
 * Swap
