@@ -47,6 +47,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
 extra_css:
   - assets/css/styles.css
   - https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.css
@@ -56,6 +58,9 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/addons/fit/fit.min.js
   - assets/js/wasm-clang/shared.js
   - assets/js/cpp_runner.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
   - Home: README.md
   - Lectures:
