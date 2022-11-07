@@ -1,5 +1,11 @@
 # Assignment 4 FAQ
 
+## 题目补充说明
+
+* Functor
+    * Hint ii修改为：When given $f$ and $x$, pick proper $g$ and $x'$ such that $g(x)=x'$ and $g(x')=f(x')$. Hence $g^n(x)=f^{n-1}(x')$.
+    * 解法不唯一
+
 ## 测试问题
 
 * Tensor
