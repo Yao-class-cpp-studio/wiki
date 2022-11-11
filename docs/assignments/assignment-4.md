@@ -16,7 +16,8 @@
 通用问题：
 
 * LNK2038 / LNK2005: 检测到“RuntimeLibrary”的不匹配项：值“MTd_StaticDebug”不匹配值“MDd_DynamicDebug”
-    * 在`CMakeLists.txt`第六行添加一行`set(gtest_force_shared_crt on)`
+    * 将`target_link_libraries(***_test gtest_main)`改成`target_link_libraries(***_test PRIVATE gtest_main)`
+    * 或者在`CMakeLists.txt`第六行添加一行`set(gtest_force_shared_crt on)`
 
 题目：
 
