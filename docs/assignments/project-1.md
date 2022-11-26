@@ -69,3 +69,7 @@ Find your badge from this list:
 * zhengxl0: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-zhengxl0/branch/main/graph/badge.svg?token=mDQwq0A6qc)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-zhengxl0)
 * zhouxs22: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-zhouxs22/branch/main/graph/badge.svg?token=lPOKLT7rR3)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-zhouxs22)
 * zq-chen22: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-zq-chen22/branch/main/graph/badge.svg?token=Y4KwMtaQX9)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-zq-chen22)
+* han-wang19: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-han-wang19/branch/main/graph/badge.svg?token=SnB64UVkHp)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-han-wang19)
+* qinchuanhui: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-qinchuanhui/branch/main/graph/badge.svg?token=84347TnCPe)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-qinchuanhui)
+* wzjwzjwzjwzjwzj: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-wzjwzjwzjwzjwzj/branch/main/graph/badge.svg?token=ml5lh1QGMZ)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-wzjwzjwzjwzjwzj)
+* yzc0731: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-yzc0731/branch/main/graph/badge.svg?token=nwcf2OSAAy)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-yzc0731)
