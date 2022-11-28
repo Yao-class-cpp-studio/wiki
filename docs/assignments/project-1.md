@@ -5,6 +5,36 @@ Announcements:
 * Subtask "trailing comma" is already supported by the library.
 Please ignore this subtask.
 
+## Running Tests
+
+There are two predefined tests in this project.
+One is simply running the target `jsoncpp_test`.
+The other runs a python script and tests the output of the program.
+
+In Visual Studio:
+
+* Run `jsoncpp_test.exe` for the first test.
+* Open the "Solution Explorer"(解决方案资源管理器) window if it's not already opened: View -> Solution Explorer
+* Click on the icon "Switch between solutions and available views"(切换视图)
+    * See the [reference](https://learn.microsoft.com/zh-cn/visualstudio/ide/use-solution-explorer?view=vs-2022#solution-explorer-toolbar) for more details
+* Choose "CMake Targets View"
+* Right click on the target "jsoncpp_check" and choose "Build". This is the second test.
+* You should see three failed tests. These tests are expected to fail(`fail_*.json`), so no worries.
+
+Or if you use command line:
+
+```bash
+# build the project as usual
+mkdir build
+cd build
+cmake ..
+
+make jsoncpp_test && ./bin/jsoncpp_test # test 1
+make jsoncpp_check                      # test 2
+```
+
+## Badges
+
 TAs' badge: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/Project-1/branch/main/graph/badge.svg?token=JS6LK1XNFY)](https://codecov.io/gh/Yao-class-cpp-studio/Project-1)
 
 Find your badge from this list:
