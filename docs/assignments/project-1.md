@@ -103,3 +103,12 @@ Find your badge from this list:
 * qinchuanhui: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-qinchuanhui/branch/main/graph/badge.svg?token=84347TnCPe)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-qinchuanhui)
 * wzjwzjwzjwzjwzj: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-wzjwzjwzjwzjwzj/branch/main/graph/badge.svg?token=ml5lh1QGMZ)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-wzjwzjwzjwzjwzj)
 * yzc0731: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-yzc0731/branch/main/graph/badge.svg?token=nwcf2OSAAy)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-yzc0731)
+* CoffeePot1206: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-CoffeePot1206/branch/main/graph/badge.svg?token=c83NKUCxEp)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-CoffeePot1206)
+* cylic14790382: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-cylic14790382/branch/main/graph/badge.svg?token=dwtQDvbDpL)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-cylic14790382)
+* h-zhou22: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-h-zhou22/branch/main/graph/badge.svg?token=ZFYlXq0MSl)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-h-zhou22)
+* Lomiaya: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-Lomiaya/branch/main/graph/badge.svg?token=xdSNdaJWhX)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-Lomiaya)
+* pummmmpkin: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-pummmmpkin/branch/main/graph/badge.svg?token=p8emKZGZZB)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-pummmmpkin)
+* sparklist: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-sparklist/branch/main/graph/badge.svg?token=ehsygBAk9y)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-sparklist)
+* yangyr22: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-yangyr22/branch/main/graph/badge.svg?token=ZgAThLT1lP)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-yangyr22)
+* zhang-br22: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-zhang-br22/branch/main/graph/badge.svg?token=mL9kZ4qLPv)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-zhang-br22)
+
