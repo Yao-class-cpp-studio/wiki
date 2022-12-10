@@ -33,6 +33,21 @@ make jsoncpp_test && ./bin/jsoncpp_test # test 1
 make jsoncpp_check                      # test 2
 ```
 
+## Viewing Compilation Logs on GitHub
+
+Add the following changes to `.github/workflows/build.sh`:
+
+```diff
+@@ -113,7 +113,8 @@ cd "${_BUILD_DIR_NAME}"
+     -DBUILD_SHARED_LIBS:BOOL=${_CMAKE_BUILD_SHARED_LIBS} \
+     -DCMAKE_INSTALL_PREFIX:PATH=${DESTDIR} \
+     ../
+ 
++  cmake --build .
+   ctest -C ${BUILD_TYPE} -D ExperimentalStart -D ExperimentalConfigure -D ExperimentalBuild ${CTEST_TESTING_OPTION}
+ cd -
+```
+
 ## Badges
 
 TAs' badge: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/Project-1/branch/main/graph/badge.svg?token=JS6LK1XNFY)](https://codecov.io/gh/Yao-class-cpp-studio/Project-1)
