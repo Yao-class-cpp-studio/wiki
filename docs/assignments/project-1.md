@@ -35,7 +35,7 @@ make jsoncpp_check                      # test 2
 
 ## Viewing Compilation Logs on GitHub
 
-Add the following changes to `.github/workflows/build.sh`:
+Add `cmake --build .` to `.github/workflows/build.sh` at about line 113:
 
 ```diff
 @@ -113,7 +113,8 @@ cd "${_BUILD_DIR_NAME}"
