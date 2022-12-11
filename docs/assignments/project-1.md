@@ -4,6 +4,8 @@ Announcements:
 
 * Subtask "trailing comma" is already supported by the library.
 Please ignore this subtask.
+* Subtask "User-defined conversion" does not need to implement `operator bool()`
+since it's already provided.
 
 ## Running Tests
 
