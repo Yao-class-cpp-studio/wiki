@@ -1,6 +1,6 @@
 # Project 1: JSON
 
-Announcements:
+## Announcements
 
 * Subtask "trailing comma" is already supported by the library.
 Please ignore this subtask.
@@ -49,6 +49,15 @@ Add `cmake --build .` to `.github/workflows/build.sh` at about line 113:
    ctest -C ${BUILD_TYPE} -D ExperimentalStart -D ExperimentalConfigure -D ExperimentalBuild ${CTEST_TESTING_OPTION}
  cd -
 ```
+
+## Debugging
+
+Here are some most common issues:
+
+* Failed to parse rewrite
+    * Check the difference between `.rewrite` file and the original `.json` file.
+* Ambiguous conversion in task 2
+    * Add `explicit` keyword to all `operator <type>()` declarations.
 
 ## Badges
 
