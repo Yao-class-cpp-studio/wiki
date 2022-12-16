@@ -35,6 +35,24 @@ make jsoncpp_test && ./bin/jsoncpp_test # test 1
 make jsoncpp_check                      # test 2
 ```
 
+## Running Examples
+
+In the last few lines of `CMakeLists.txt`:
+
+```cmake
+if(JSONCPP_WITH_EXAMPLE)
+    add_subdirectory(example)
+endif()
+```
+
+Delete the `if` statement and leave:
+
+```cmake
+add_subdirectory(example)
+```
+
+Then you can find the examples target in the cmake target list.
+
 ## Viewing Compilation Logs on GitHub
 
 Add `cmake --build .` to `.github/workflows/build.sh` at about line 113:
