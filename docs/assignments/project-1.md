@@ -77,6 +77,10 @@ Here are some most common issues:
 * Ambiguous conversion in task 2
     * Add `explicit` keyword to all `operator <type>()` declarations.
 
+## Troubleshooting
+
+* Can't find `-ljsoncpp_lib`: This might happen if you are compiling examples on github action. Change line `26` to `LIB_TYPE=shared` in `.github/workflows/build.yml`.
+
 ## Badges
 
 TAs' badge: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/Project-1/branch/main/graph/badge.svg?token=JS6LK1XNFY)](https://codecov.io/gh/Yao-class-cpp-studio/Project-1)
