@@ -170,4 +170,7 @@ Find your badge from this list:
 * ybweybwe: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-ybweybwe/branch/main/graph/badge.svg?token=PjPO7ikrtU)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-ybweybwe)
 * zhqwqwq: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-zhqwqwq/branch/main/graph/badge.svg?token=EhAAiJjnlq)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-zhqwqwq)
 * Zixuan-Cao: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-Zixuan-Cao/branch/main/graph/badge.svg?token=eyDWBJhdre)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-Zixuan-Cao)
-
+* caizx22: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-caizx22/branch/main/graph/badge.svg?token=y7t7jPvzDD)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-caizx22)
+* InvUsr: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-InvUsr/branch/main/graph/badge.svg?token=kcn8lxvzot)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-InvUsr)
+* maxyccc: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-maxyccc/branch/main/graph/badge.svg?token=JUouzErNvd)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-maxyccc)
+* QhtIsNotAvailable: [![codecov](https://codecov.io/gh/Yao-class-cpp-studio/project-1-QhtIsNotAvailable/branch/main/graph/badge.svg?token=dKv6vO8ZKl)](https://codecov.io/gh/Yao-class-cpp-studio/project-1-QhtIsNotAvailable)
