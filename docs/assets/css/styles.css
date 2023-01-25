@@ -45,3 +45,7 @@
 [data-md-color-scheme="slate"] .md-footer-meta {
     border-top: 0.01rem solid var(--md-primary-fg-color);
 }
+
+nav.md-footer__inner {
+    display: none !important;
+}

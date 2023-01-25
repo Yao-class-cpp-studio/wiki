@@ -32,6 +32,16 @@ class WorkerAPI {
   }
 }
 
+function make_play_button() {
+  const el = document.createElement('span');
+  el.classList.add('twemoji');
+  el.innerHTML = `
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M8 5.14v14l11-7-11-7Z" fill=""></path>
+  </svg>
+  `;
+  return el;
+}
 
 function createRunner(code_el) {
   code_el.parentElement.querySelectorAll('button').forEach(function(el) {
@@ -50,9 +60,10 @@ function createRunner(code_el) {
     api.compileLinkRun(editor.getValue());
   }, 100);
 
-  let editor = ace.edit(code_el);
+  const editor = ace.edit(code_el);
   editor.session.setMode('ace/mode/c_cpp');
   editor.setOption("maxLines", 100);
+  editor.renderer.setShowGutter(false);
   editor.clearSelection();
   editor.commands.addCommand({
     name: 'run',
@@ -80,12 +91,36 @@ function createRunner(code_el) {
 
   const onResize = debounceLazy(() => {
     editor.resize();
-    term.fit();
+    if (term !== null) {
+      term.fit();
+    }
   }, 20);
   window.addEventListener('resize', onResize);
 
+  const pre_el = code_el.parentElement;
+  const div_el = pre_el.parentElement;
+
+  const button_el = document.createElement('button');
+  button_el.appendChild(make_play_button());
+
+  const span = document.createElement('span');
+  span.innerHTML = 'Run this code (<kbd>Ctrl</kbd>+<kbd>Enter</kbd>)';
+  button_el.appendChild(span);
+
+  button_el.style.marginTop = pre_el.style.marginTop;
+  pre_el.style.marginTop = '0';
+  div_el.insertBefore(button_el, pre_el);
+
+  button_el.addEventListener('click', run);
+  button_el.style.cursor = 'pointer';
+  button_el.addEventListener('mouseover', () => {
+    button_el.querySelector('svg').style.fill = 'green';
+  });
+  button_el.addEventListener('mouseout', () => {
+    button_el.querySelector('svg').style.fill = '';
+  });
 }
 
 window.addEventListener('load', event => {
-  document.querySelectorAll('code.language-runcpp').forEach(createRunner);
+  document.querySelectorAll('.run code').forEach(createRunner);
 });

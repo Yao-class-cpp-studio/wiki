@@ -49,6 +49,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.superfences
 extra_css:
   - assets/css/styles.css
   - https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.css
@@ -67,8 +68,23 @@ nav:
     - "01 Intro to C": lectures/01.md
     - "02 C Basics": lectures/02.md
   - Toolchain:
-    - 编译器: toolchain/compiler.md
-    - git: toolchain/git.md
+    - toolchain/README.md
+    - 配置开发环境: toolchain/environment/README.md
+    - 命令行: toolchain/shell/README.md
+    - 网络基础:
+      - toolchain/network/README.md
+      - 常见软件代理设置: toolchain/network/common.md
+      - WSL中会出现的问题: toolchain/network/wsl.md
+    - Git新手入门:
+      - toolchain/git/README.md
+      - 进阶-配置Git: toolchain/git/config.md
+      - 进阶-Git的分支管理: toolchain/git/branch.md
+      - 进阶-Git的命令行操作: toolchain/git/command.md
+      - 高阶-Git原理: toolchain/git/principle.md
+      - 高阶-多远程管理: toolchain/git/remote.md
+      - 高阶-修改历史: toolchain/git/history.md
+      - 参考-Git命令速查表: toolchain/git/cheatsheet.md
+    - Conda: toolchain/conda/README.md
     - CMake: toolchain/cmake.md
     - libpng: toolchain/libpng.md
   - Assignments:
