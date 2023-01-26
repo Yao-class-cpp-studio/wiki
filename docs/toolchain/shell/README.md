@@ -12,14 +12,7 @@
 
 其实，命令行界面在我们的生活中十分常见。比如营销短信最后会提示你“回复TD退订”，这里你输入`TD`之后发送，就完成了一次和营销系统的交互。
 
-<style>
-    @media screen and (min-width: 60em) {
-        .sk-right-half {
-            max-width: 50% !important;
-        }
-    }
-</style>
-<img align="right" src="./images/wx_cmd.jpg" class="sk-right-half">
+<img align="right" src="./images/wx_cmd.jpg">
 
 另外一个例子是，微信中的许多公众号都支持公众号自动回复。我们在聊天框里面输入我们想要获取的信息，然后微信机器人就会自动返回结果。如右图中，我们可以在一年中的某些时期通过学生清华公众号查询自己的阳光长跑次数。这也是一种命令行界面。
 

@@ -62,7 +62,7 @@ extra_javascript:
   - https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/xterm/3.14.5/addons/fit/fit.min.js
   - assets/js/wasm-clang/shared.js
   - assets/js/cpp_runner.js
-  - assets/js/asciinema-player.min.js
+  - assets/js/asciinema-player.min.js  # 3.0.1
   - assets/js/index.js
   - https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.js
 nav:

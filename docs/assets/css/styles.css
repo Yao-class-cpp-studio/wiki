@@ -53,3 +53,9 @@ nav.md-footer__inner {
 .asciinema-terminal {
     margin: 0 !important;
 }
+
+@media screen and (min-width: 60em) {
+    img[align=right] {
+        max-width: 50% !important;
+    }
+}
