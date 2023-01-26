@@ -13,7 +13,6 @@ document$.subscribe(() => {
 // Load Asciinema
 document$.subscribe(() => {
   document.querySelectorAll('div[data-asciinema]').forEach((el) => {
-    console.log(el);
     AsciinemaPlayer.create(el.getAttribute('data-asciinema'), el);
   })
 });

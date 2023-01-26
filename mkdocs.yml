@@ -52,7 +52,7 @@ markdown_extensions:
   - pymdownx.superfences
 extra_css:
   - assets/css/styles.css
-  - https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/asciinema-player/2.6.1/asciinema-player.min.css
+  - assets/css/asciinema-player.css
   - https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/xterm/3.14.5/xterm.min.css
   - https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.css
 extra_javascript:
@@ -60,7 +60,6 @@ extra_javascript:
   - https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/ace/1.4.14/ace.min.js
   - https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/xterm/3.14.5/xterm.js
   - https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/xterm/3.14.5/addons/fit/fit.min.js
-  - https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/asciinema-player/2.6.1/asciinema-player.min.js
   - assets/js/wasm-clang/shared.js
   - assets/js/cpp_runner.js
   - assets/js/asciinema-player.min.js
