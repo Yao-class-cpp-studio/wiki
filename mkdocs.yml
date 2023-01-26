@@ -54,6 +54,7 @@ extra_css:
   - assets/css/styles.css
   - https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/asciinema-player/2.6.1/asciinema-player.min.css
   - https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/xterm/3.14.5/xterm.min.css
+  - https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.css
 extra_javascript:
   # https://cdn.bytedance.com/
   - https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/ace/1.4.14/ace.min.js
@@ -64,8 +65,7 @@ extra_javascript:
   - assets/js/cpp_runner.js
   - assets/js/asciinema-player.min.js
   - assets/js/index.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/mathjax/3.2.0/es5/tex-mml-chtml.min.js
+  - https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.js
 nav:
   - Home: README.md
   - Lectures:
