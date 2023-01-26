@@ -109,6 +109,7 @@ function createRunner(code_el) {
 
   button_el.style.marginTop = pre_el.style.marginTop;
   pre_el.style.marginTop = '0';
+  button_el.style.color = 'var(--md-typeset-color)';
   div_el.insertBefore(button_el, pre_el);
 
   button_el.addEventListener('click', run);

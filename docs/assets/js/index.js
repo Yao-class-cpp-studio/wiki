@@ -1,3 +1,5 @@
+// Load Mathjax
+
 window.MathJax = {
   tex: {
     inlineMath: [["\\(", "\\)"]],
@@ -14,3 +16,12 @@ window.MathJax = {
 document$.subscribe(() => { 
   MathJax.typesetPromise()
 })
+
+// Load Asciinema
+
+document$.subscribe(() => {
+  document.querySelectorAll('div[data-asciinema]').forEach((el) => {
+    console.log(el);
+    AsciinemaPlayer.create(el.getAttribute('data-asciinema'), el);
+  })
+});

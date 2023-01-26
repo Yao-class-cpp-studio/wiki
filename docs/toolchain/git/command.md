@@ -47,7 +47,7 @@ git commit -m "Your comments on the change"
 
 记住，`git status`命令是全程可用的，你可以随时查看你的状态：
 
-<script id="asciicast-b8UmXdVmxToI3QFIZycyykrS8" src="https://asciinema.org/a/b8UmXdVmxToI3QFIZycyykrS8.js" async></script>
+<div data-asciinema="../images/554477.cast"></div>
 
 你第一次在命令行中commit的时候，可能会得到这样的输出：
 
@@ -73,7 +73,7 @@ git config --global user.name "San Zhang"
 
 如果你忘了使用`-m`选项提交commit信息，你可能会进入一个奇妙的界面不知道怎么退出：
 
-<script id="asciicast-c356b6zg2UZNjPFT7i54qCgsx" src="https://asciinema.org/a/c356b6zg2UZNjPFT7i54qCgsx.js" async></script>
+<div data-asciinema="../images/554484.cast"></div>
 
 这其实是git打开了vim的界面让我们编辑commit信息，如果你不会用vim的话，按`:wq`退出之后加上`-m`进行commit即可。
 

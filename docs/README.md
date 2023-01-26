@@ -86,5 +86,6 @@ This site would not have been possible without the effort from Prof. Huanchen Zh
 * Clang/LLD in WebAssembly: [binji/wasm-clang](https://github.com/binji/wasm-clang)
 * [Mathjax](https://www.mathjax.org/)
 * [Asciinema](https://asciinema.org/)
+* [Ace Editor](https://ace.c9.io/)
 
 ...and you!

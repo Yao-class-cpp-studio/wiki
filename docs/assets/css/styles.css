@@ -49,3 +49,7 @@
 nav.md-footer__inner {
     display: none !important;
 }
+
+.asciinema-terminal {
+    margin: 0 !important;
+}
