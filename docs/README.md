@@ -10,7 +10,7 @@ Fall 2022, Instructor: Huanchen Zhang
 
 :fire: Ongoing<br/>
 <big style="font-size: 2em;"><bold>Assignment 2</bold> &mdash; <span id="rest-time"></span></big><br/>
-<small>Due time: <span id="due-time"></span>
+<small>Due time: <span id="due-time"></span></small>
 
 <script>
     let due_date = new Date('Oct 18, 2022 23:59:00 GMT+08:00');
@@ -77,3 +77,14 @@ Fall 2022, Instructor: Huanchen Zhang
 </tr>
 </tbody>
 </table>
+
+## About
+
+This site would not have been possible without the effort from Prof. Huanchen Zhang, the TA team, the amazing open source projects:
+
+* [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+* Clang/LLD in WebAssembly: [binji/wasm-clang](https://github.com/binji/wasm-clang)
+* [Mathjax](https://www.mathjax.org/)
+* [Asciinema](https://asciinema.org/)
+
+...and you!
