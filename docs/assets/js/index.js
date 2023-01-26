@@ -25,3 +25,9 @@ document$.subscribe(() => {
     AsciinemaPlayer.create(el.getAttribute('data-asciinema'), el);
   })
 });
+
+// Load cpp_runner
+
+document$.subscribe(() => {
+  document.querySelectorAll('.run code').forEach(createRunner);
+});

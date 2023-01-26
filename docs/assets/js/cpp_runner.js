@@ -121,7 +121,3 @@ function createRunner(code_el) {
     button_el.querySelector('svg').style.fill = '';
   });
 }
-
-window.addEventListener('load', event => {
-  document.querySelectorAll('.run code').forEach(createRunner);
-});
