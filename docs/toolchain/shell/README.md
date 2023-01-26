@@ -43,6 +43,16 @@ printf 2
 printf 3
 ```
 
+<div>
+<style>
+#asciicast-container-h7ikmH2vPsAh355VBT8h4YZW0 {
+  margin-top: 0 !important;
+}
+</style>
+<small>这是一个Asciicast，你可以直接从上面复制文字！</small><br>
+<script id="asciicast-h7ikmH2vPsAh355VBT8h4YZW0" src="https://asciinema.org/a/h7ikmH2vPsAh355VBT8h4YZW0.js" async></script>
+</div>
+
 可见，合理利用shell，可以大大提高效率。最经典的shell是the Bourne shell (`sh`)，日常我们常用的shell有`bash`和`zsh`。它们略有区别，但大部分命令是共通的。可以在命令行中输入`echo $SHELL`确认你当前用的是哪个shell。
 
 ## 如何打开命令行
