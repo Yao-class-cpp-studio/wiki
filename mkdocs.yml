@@ -10,12 +10,6 @@ plugins:
 theme:
   name: material
   palette:
-    - scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Using dark mode
-      primary: deep purple
-      accent: deep purple
     - scheme: default
       primary: white
       toggle:
