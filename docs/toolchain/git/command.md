@@ -77,6 +77,101 @@ git config --global user.name "San Zhang"
 
 这其实是git打开了vim的界面让我们编辑commit信息，如果你不会用vim的话，按`:wq`退出之后加上`-m`进行commit即可。
 
+## 认证
+
+我们的下一步是把新的commit同步到远端，比如GitHub，但是我们需要向远端证明自己的身份——我们需要登陆我们的帐号。以前，这项工作只要求我们输入GitHub帐户名和密码就可以了；但是从2021/08/13开始，GitHub禁用了密码登录，我们必须使用一些更安全的方式。
+
+=== "GCM (推荐)"
+
+    首先我们需要安装Git Credential Manager。
+
+    === "Windows"
+
+        Git for Windows自带，默认安装即可。
+
+    === "Linux / WSL"
+
+        通过任意一种方式安装：
+
+        * 通过发行版的包管理器安装`dotnet`，然后通过dotnet安装`git-credential-manager`并把安装路径添加到PATH中。如在Debian/Ubuntu中：
+            ```bash
+            # 通过包管理器安装dotnet
+            sudo apt update
+            sudo apt install -y dotnet-runtime-6.0
+            # 通过dotnet安装
+            dotnet tool install -g git-credential-manager
+            # 添加工具路径到PATH环境变量中
+            echo 'export PATH="'"$HOME/.dotnet/tools"':$PATH"' >> ~/.profile
+            ```
+        * 通过conda安装：
+            ```bash
+            conda install dotnet -c conda-forge
+            dotnet tool install --tool-path "${DOTNET_TOOLS}" git-credential-manager
+            ```
+        * 通过[tarball安装](https://github.com/GitCredentialManager/git-credential-manager/blob/release/docs/install.md#tarball)
+        * WSL可以使用Windows上的GCM，参考[官方文档](https://github.com/GitCredentialManager/git-credential-manager/blob/release/docs/wsl.md)。
+
+        安装完成后，执行以下命令：
+
+        ```bash
+        git config --global credential.credentialStore plaintext
+        git-credential-manager configure
+        ```
+
+        我们这里使用明文存储access token，比较方便但是不太安全，有需要可以根据[GCM文档](https://github.com/GitCredentialManager/git-credential-manager/blob/release/docs/credstores.md)使用其他存储方式。
+
+    === "macOS"
+
+        安装Homebrew，然后运行：
+
+        ```bash
+        brew tap microsoft/git
+        brew install --cask git-credential-manager-core
+        ```
+
+    安装完成后，直接使用`https:`开头的remote，如
+
+    ```bash
+    https://github.com/Yao-class-cpp-studio/wiki.git
+    ```
+
+    在进行需要认证的操作的时候（如push）浏览器会自动打开提示你登录，输入帐号密码即可。
+
+=== "GitHub CLI (仅支持GitHub)"
+
+    安装[GitHub的命令行客户端](https://github.com/cli/cli#installation)，然后输入
+
+    ```bash
+    gh auth login
+    ```
+
+    * When prompted for your preferred protocol for Git operations, select `HTTPS`.
+    * When asked if you would like to authenticate to Git with your GitHub credentials, enter `Y`.
+
+=== "SSH"
+
+    参考我们的[教程](../../shell/ssh)准备好一个公钥对，然后把公钥在[这里](https://github.com/settings/ssh/new)添加到GitHub上。
+
+    之后使用ssh协议连接到remote，比如：
+
+    ```
+    git clone git@github.com:Yao-class-cpp-studio/wiki.git
+    ```
+
+    你的仓库的ssh地址可以在GitHub上找到。
+
+=== "PAT (不推荐)"
+
+    在[这个页面](https://github.com/settings/tokens/new)添加一个personal access token，记得勾选`repo`权限。然后在碰到认证的时候，用户名使用GitHub用户名，密码使用刚刚生成的token。
+
+    如果觉得每次都要输入密码很麻烦，可以使用`git config`命令把密码保存起来：
+
+    ```bash
+    git config --global credential.helper store
+    ```
+
+    这样输完一次token之后就不需要再重复输入了。需要注意的是，这个命令会把你的token**明文**保存在`~/.git-credentials`文件中，请注意保护好这个文件。
+
 ## 同步
 
 只有一个命令：

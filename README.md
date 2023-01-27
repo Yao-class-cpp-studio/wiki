@@ -9,5 +9,11 @@ please visit the [website](https://yaoclasscpp.studio).
 ```bash
 git clone https://github.com/Yao-class-cpp-studio/wiki.git
 pip install mkdocs-material
+```
+
+Start serving by
+
+```bash
+cd wiki
 mkdocs serve
 ```

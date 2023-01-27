@@ -26,7 +26,7 @@ Commit的历史不一定会排成一条直线。比如说，你和朋友同时�
 
 菜单栏&#8594;Branch&#8594;Merge into Current Branch...操作可以把其他branch的内容合并到目前我们所在的分支。
 
-![Merge illustration](../images/02 Branch-1 kopiera.png)
+![Merge illustration](./images/02 Branch-1 kopiera.png)
 <br>
 <small markdown>图源：[Atlassian](https://www.atlassian.com/git/tutorials/using-branches/git-merge)</small>
 
@@ -66,7 +66,7 @@ Commit的历史不一定会排成一条直线。比如说，你和朋友同时�
 
 我们有时候在GitHub上发现别人的仓库里面有bug，想要修改，却没有修改权限，这个时候的标准操作是创建一个PR。我们首先点击仓库页面右上方的Fork：
 
-![Fork button](../images/fork_button.jpg)
+![Fork button](./images/fork_button.jpg)
 
 这样就创建了一个我们有修改权限的仓库，它相当于是我们的一个分支。我们在这上面进行修改之后，创建一个Pull request，等待原仓库管理员审核即可。
 

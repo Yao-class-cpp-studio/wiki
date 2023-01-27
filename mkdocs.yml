@@ -73,7 +73,10 @@ nav:
   - Toolchain:
     - toolchain/README.md
     - 配置开发环境: toolchain/environment/README.md
-    - 命令行: toolchain/shell/README.md
+    - 命令行:
+      - toolchain/shell/README.md
+      - SSH: toolchain/shell/ssh.md
+      - 包管理: toolchain/shell/package.md
     - 网络基础:
       - toolchain/network/README.md
       - 常见软件代理设置: toolchain/network/common.md
