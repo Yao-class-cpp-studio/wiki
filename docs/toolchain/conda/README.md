@@ -34,7 +34,7 @@ sudo apt install g++
 <li>解压缩；</li>
 <li>如果程序还是源代码，那么需要进行编译；如果编译器没有安装，则需要先按这整个流程安装编译器；</li>
 <li>记住这个软件的安装路径；</li>
-<li>为了能够在任何文件夹中都能执行这个程序，我们把安装路径加到环境变量`PATH`中；如在`.bashrc`中添加一行
+<li markdown>为了能够在任何文件夹中都能执行这个程序，我们把安装路径加到环境变量`PATH`中；如在`.bashrc`中添加一行
 
 ```bash
 export PATH=/path/to/your/program:$PATH
