@@ -5,19 +5,60 @@ title: Homepage
 # 编程入门（C/C++）
 
 <small>
-Fall 2022, Instructor: Huanchen Zhang
+Fall 2023, Instructor: Huanchen Zhang
 </small>
 
-:fire: Ongoing<br/>
-<big style="font-size: 2em;"><bold>Assignment 2</bold> &mdash; <span id="rest-time"></span></big><br/>
+<div id="ongoing" markdown style="display:none;">
+:fire: Ongoing
+</div>
+<div id="incoming" markdown style="display:none;">
+:alarm_clock: Incoming
+</div>
+<big style="font-size: 2em;"><bold id="hw-title">Assignment 2</bold> &mdash; <span id="rest-time"></span></big><br/>
 <small>Due time: <span id="due-time"></span></small>
 
 <script>
-    let due_date = new Date('Oct 18, 2022 23:59:00 GMT+08:00');
-    window.addEventListener('load', function(){
-        document.getElementById('due-time').innerHTML = due_date.toLocaleString();
+    const schedule = {
+        'Assginment 1': ['2023/09/24 23:59:00 GMT+08:00', '2023/10/08 23:59:00 GMT+08:00'],
+        'Assginment 2': ['2023/10/08 23:59:00 GMT+08:00', '2023/10/22 23:59:00 GMT+08:00'],
+        'Assginment 3': ['2023/10/22 23:59:00 GMT+08:00', '2023/11/05 23:59:00 GMT+08:00'],
+        'Assginment 4': ['2023/11/05 23:59:00 GMT+08:00', '2023/11/19 23:59:00 GMT+08:00'],
+        'Project 1': ['2023/11/19 23:59:00 GMT+08:00', '2023/12/17 23:59:00 GMT+08:00'],
+        'Project 2': ['2023/12/27 23:59:00 GMT+08:00', '2024/01/21 23:59:00 GMT+08:00'],
+    };
+    window.addEventListener('load', function() {
         function setTime() {
-            let diff = due_date.getTime() - (new Date()).getTime();
+            const cur_date = new Date();
+            let due_date = null;
+            let title = '';
+            let state = 'finished';
+            for (let [k, [start, end]] of Object.entries(schedule)) {
+                start = new Date(start);
+                end = new Date(end);
+                if (start < cur_date && cur_date < end) {
+                    due_date = end;
+                    title = k;
+                    state = 'ongoing';
+                    break;
+                } else if (cur_date > end && (end > due_date || due_date === null)) {
+                    title = k;
+                    due_date = end;
+                } else if (cur_date < start && (start < due_date || due_date === null)) {
+                    title = k;
+                    due_date = start;
+                    state = 'incoming';
+                }
+            }
+            if (state === 'ongoing') {
+                document.getElementById('ongoing').style.display = 'inline';
+                document.getElementById('incoming').style.display = 'none';
+            } else if (state === 'incoming') {
+                document.getElementById('incoming').style.display = 'inline';
+                document.getElementById('ongoing').style.display = 'none';
+            }
+            document.getElementById('due-time').innerHTML = due_date.toLocaleString();
+            document.getElementById('hw-title').innerHTML = title;
+            let diff = due_date.getTime() - cur_date.getTime();
             let str = '';
             if (diff < 0) {
                 str = 'Finished';
@@ -46,34 +87,43 @@ Fall 2022, Instructor: Huanchen Zhang
 <table markdown>
 <tbody markdown>
 <tr>
-<th>Week</th><th>Date</th><th>Contents</th><th>Assignments & Projects</th>
+<th>Week</th><th>Date</th><th>Lecture</th><th>Date</th><th>Homework & Projects</th>
 </tr>
 <tr markdown>
-<td>1</td><td>9/13</td><td>C/C++ Introduction, Editors, IDEs, Version Control, Writing first program, Compiling, Linking, Variables, Datatypes, Arithmetic Operators</td><td markdown>Assignment 1 `due 9/27`</td>
+<td>1</td><td>09/19</td><td>Course Overview & Introduction to C</td><td><time datetime="2023-09-24">09/24</time></td><td markdown>HW1 release</td>
 </tr>
 <tr>
-<td>2</td><td>9/20</td><td>Array, String, Struct, Control Flow (Branching, Loops)</td><td></td>
+<td>2</td><td>09/26</td><td>C Basics</td><td></td><td></td>
 </tr>
 <tr>
-<td>3</td><td>9/27</td><td>Pointers, Pointer Arithmetic, Debugging (gdb), Functions and Modular Programming, Variable Scope</td><td></td>
+<td>3</td><td>10/03</td><td><strong>Holiday⛱️</strong></td><td>10/08</td><td>HW1 <strong>due</strong>, HW2 release</td>
 </tr>
 <tr markdown>
-<td>4</td><td>10/4</td><td>Recursion, Dynamic Memory Allocations, Garbage Collection</td><td markdown>Assignment 2 `due 10/18`</td>
+<td>4</td><td>10/10</td><td>C Memory</td><td></td><td></td>
 </tr>
 <tr>
-<td>5</td><td>10/11</td><td>Encapsulation, Object, Class, Constructor, Destructor, Member Function, Overloading</td><td></td>
+<td>5</td><td>10/17</td><td>C Advanced</td><td>10/22</td><td>HW2 <strong>due</strong>, HW3 release</td>
 </tr>
 <tr markdown>
-<td>6</td><td>10/18</td><td>Inheritance and Polymorphism, Template, STL</td><td markdown>Assignment 3 `due 11/1`</td>
+<td>6</td><td>10/24</td><td>Object-Oriented Programming & C++</td><td></td><td></td>
 </tr>
 <tr>
-<td>7</td><td>10/25</td><td>Miscellaneous (Type Cast, Friends, Exception, etc.), Modern C++ (C++ 11 and beyond), Writing Effective C++, Coding Style, Coding Habits</td><td></td>
+<td>7</td><td>10/31</td><td>Inheritance & Polymorphism</td><td>11/05</td><td>HW3 <strong>due</strong>, HW4 release</td>
 </tr>
 <tr markdown>
-<td>8</td><td>11/1</td><td>Code Performance</td><td markdown>Assignment 4 `due 11/15`</td>
+<td>8</td><td>11/07</td><td>STL & Modern C++</td><td></td><td></td>
 </tr>
 <tr markdown>
-<td>9-15</td><td></td><td>Coding Projects + Discussion Sessions</td><td>Project 1 & 2</td>
+<td>8</td><td>11/07</td><td>C++ Design Patterns</td><td>11/19</td><td>HW4 <strong>due</strong>, P1 release</td>
+</tr>
+<tr markdown>
+<td>8</td><td>11/14</td><td>Performance Fun!</td><td></td><td></td>
+</tr>
+<tr markdown>
+<td><strong>13</strong></td><td></td><td></td><td>12/17</td><td>P1 <strong>due</strong>, P2 release</td>
+</tr>
+<tr markdown>
+<td><strong>18</strong></td><td></td><td></td><td>01/21</td><td markdown>P2 <strong>due</strong></td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +138,5 @@ This site would not have been possible without the effort from Prof. Huanchen Zh
 * [Asciinema](https://asciinema.org/)
 * [Ace Editor](https://ace.c9.io/)
 
-...and you!
+...and you! Submit bugs, thoughts, advices, to [the issue tracker](https://github.com/Yao-class-cpp-studio/wiki/issues).
+Or even better, submit a pull request by clicking the edit:fontawesome-solid-pen: button on the top right corner of each page.
