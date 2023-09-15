@@ -8,14 +8,17 @@ title: Homepage
 Fall 2023, Instructor: Huanchen Zhang
 </small>
 
-<div id="ongoing" markdown style="display:none;">
-:fire: Ongoing
-</div>
-<div id="incoming" markdown style="display:none;">
-:alarm_clock: Incoming
-</div>
-<big style="font-size: 2em;"><bold id="hw-title">Assignment 2</bold> &mdash; <span id="rest-time"></span></big><br/>
-<small>Due time: <span id="due-time"></span></small>
+!!! note ""
+
+    <span id="ongoing" markdown style="display:none;">
+    :fire: Ongoing
+    </span>
+    <span id="incoming" markdown style="display:none;">
+    :alarm_clock: Incoming
+    </span>
+    <br/>
+    <big style="font-size: 2em;"><bold id="hw-title">Assignment 2</bold> &mdash; <span id="rest-time"></span></big><br/>
+    <small>Due time: <span id="due-time"></span></small>
 
 <script>
     const schedule = {
@@ -26,7 +29,6 @@ Fall 2023, Instructor: Huanchen Zhang
         'Project 1': ['2023/11/19 23:59:00 GMT+08:00', '2023/12/17 23:59:00 GMT+08:00'],
         'Project 2': ['2023/12/27 23:59:00 GMT+08:00', '2024/01/21 23:59:00 GMT+08:00'],
     };
-    window.addEventListener('load', function() {
         function setTime() {
             const cur_date = new Date();
             let due_date = null;
@@ -79,7 +81,6 @@ Fall 2023, Instructor: Huanchen Zhang
         }
         setTime();
         setInterval(setTime, 500);
-    })
 </script>
 
 ## Tentative Schedule

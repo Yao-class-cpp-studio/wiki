@@ -59,3 +59,15 @@ nav.md-footer__inner {
         max-width: 50% !important;
     }
 }
+
+.md-typeset h1 {
+    font-weight: 700;
+}
+
+.md-typeset h2 {
+    font-weight: 500;
+}
+
+.md-typeset h1 {
+    color: var(--md-default-bg-color--darkest);
+}
