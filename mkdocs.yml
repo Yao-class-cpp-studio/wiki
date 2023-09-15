@@ -22,6 +22,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - content.tabs.link
+    - content.action.edit
 markdown_extensions:
   - admonition
   - pymdownx.details
