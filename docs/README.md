@@ -140,4 +140,4 @@ This site would not have been possible without the effort from Prof. Huanchen Zh
 * [Ace Editor](https://ace.c9.io/)
 
 ...and you! Submit bugs, thoughts, advices, to [the issue tracker](https://github.com/Yao-class-cpp-studio/wiki/issues).
-Or even better, submit a pull request by clicking the edit:fontawesome-solid-pen: button on the top right corner of each page.
+Or even better, submit a pull request by clicking the edit:material-file-edit: button on the top right corner of each page.
