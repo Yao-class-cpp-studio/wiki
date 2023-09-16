@@ -115,10 +115,10 @@ Fall 2023, Instructor: Huanchen Zhang
 <td>8</td><td>11/07</td><td>STL & Modern C++</td><td></td><td></td>
 </tr>
 <tr markdown>
-<td>8</td><td>11/07</td><td>C++ Design Patterns</td><td>11/19</td><td>HW4 <strong>due</strong>, P1 release</td>
+<td>9</td><td>11/07</td><td>C++ Design Patterns</td><td>11/19</td><td>HW4 <strong>due</strong>, P1 release</td>
 </tr>
 <tr markdown>
-<td>8</td><td>11/14</td><td>Performance Fun!</td><td></td><td></td>
+<td>10</td><td>11/14</td><td>Performance Fun!</td><td></td><td></td>
 </tr>
 <tr markdown>
 <td><strong>13</strong></td><td></td><td></td><td>12/17</td><td>P1 <strong>due</strong>, P2 release</td>
@@ -139,5 +139,5 @@ This site would not have been possible without the effort from Prof. Huanchen Zh
 * [Asciinema](https://asciinema.org/)
 * [Ace Editor](https://ace.c9.io/)
 
-...and you! Submit bugs, thoughts, advices, to [the issue tracker](https://github.com/Yao-class-cpp-studio/wiki/issues).
+...and you! Submit bugs, thoughts, advice, to [the issue tracker](https://github.com/Yao-class-cpp-studio/wiki/issues).
 Or even better, submit a pull request by clicking the edit:material-file-edit: button on the top right corner of each page.
