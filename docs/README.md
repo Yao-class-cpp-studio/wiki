@@ -18,7 +18,7 @@ Fall 2023, Instructor: Huanchen Zhang
     </span>
     <br/>
     <big style="font-size: 2em;"><bold id="hw-title">Assignment 2</bold> &mdash; <span id="rest-time"></span></big><br/>
-    <small>Due time: <span id="due-time"></span></small>
+    <small><span id="time-type">Due time: </span><span id="due-time"></span></small>
 
 <script>
     const schedule = {
@@ -54,9 +54,11 @@ Fall 2023, Instructor: Huanchen Zhang
             if (state === 'ongoing') {
                 document.getElementById('ongoing').style.display = 'inline';
                 document.getElementById('incoming').style.display = 'none';
+                document.getElementById('time-type').innerHTML = 'Due time: ';
             } else if (state === 'incoming') {
                 document.getElementById('incoming').style.display = 'inline';
                 document.getElementById('ongoing').style.display = 'none';
+                document.getElementById('time-type').innerHTML = 'Release time: ';
             }
             document.getElementById('due-time').innerHTML = due_date.toLocaleString();
             document.getElementById('hw-title').innerHTML = title;
