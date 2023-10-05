@@ -4,24 +4,7 @@ vcpkg 是微软提供的一个用于管理 C/C++ 第三方库的工具，通常�
 
 vcpkg 仓库链接：[https://github.com/microsoft/vcpkg](https://github.com/microsoft/vcpkg)
 
-在提供好的作业框架中，同学们通常不需要自行配置什么，vcpkg 会在构建 CMake 工程的过程中自动部署，但由于系统环境原因可能会出现类似下方示例的报错
-
-```
-[]: # BEGIN: error-example
--- Bootstrapping tool before install
--- Bootstrapping tool before install - failed
-CMake Error at external/project/external/tool/scripts/buildsystems/tool.cmake:899 (message):
-  tool install failed.  See logs for more information:
-  /path/to/logs/tool-bootstrap.log
-Call Stack (most recent call first):
-  /usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake:124 (include)
-  CMakeLists.txt:5 (project)
-[]: # END: error-example
-```
-
-需要同学们根据提示查看具体的报错信息并解决。
-
-vcpkg 本身安装过程中需要编译第三方库，这个过程可能会比较耗时，如果你的网络环境不好，可以考虑使用镜像源，例如清华大学提供的镜像源：[https://mirrors.tuna.tsinghua.edu.cn/help/vcpkg/](https://mirrors.tuna.tsinghua.edu.cn/help/vcpkg/)
+在提供好的作业框架中，同学们通常不需要自行配置什么，vcpkg 会在构建 CMake 工程的过程中自动部署，但由于系统环境原因可能会出现报错，需要同学们根据提示查看具体的报错信息。
 
 ## 已知问题
 
