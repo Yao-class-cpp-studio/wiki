@@ -88,6 +88,7 @@ nav:
     - Conda: toolchain/conda/README.md
     - CMake: toolchain/cmake.md
     - libpng: toolchain/libpng.md
+    - vcpkg: toolchain/vcpkg.md
   # - Assignments:
   #   - Assignment 4: assignments/assignment-4.md
   #   - Project 1: assignments/project-1.md
