@@ -6,11 +6,15 @@ Vulkan 是一个新的图形 API，它的目标是解决 OpenGL 存在的问题�
 
 Vulkan SDK 是 Vulkan 的官方开发工具包，包含了 Vulkan 的头文件、库文件、调试工具等。
 
+## 安装
+
 === "Windows"
 
     在 Windows 上，Vulkan SDK 的安装非常简单，只需要下载并运行[安装程序](https://sdk.lunarg.com/sdk/download/latest/windows/vulkan-sdk.exe)即可。安装仅需要核心组件，其他组件没有必要勾选。
 
 === "Linux"
+
+    - 通用方法
 
     在 Linux 上，Vulkan SDK 的安装稍微复杂一些，需要手动下载并解压缩。你可以通过如下脚本完成安装：
 
@@ -31,8 +35,44 @@ Vulkan SDK 是 Vulkan 的官方开发工具包，包含了 Vulkan 的头文件�
     source ~/.bashrc
     ```
 
-    首先，我们需要下载 Vulkan SDK 的安装包。Vulkan SDK 的下载地址为：[https://vulkan.lunarg.com/sdk/home](https://vulkan.lunarg.com/sdk/home)。在这个页面中，我们需要选择适合自己的操作系统的安装包。在这里，我们选择 [Linux 的安装包](https://sdk.lunarg.com/sdk/download/latest/linux/vulkan-sdk.tar.gz)。
+    对于 Ubuntu 20.04 及以上版本，你可以直接通过包管理器安装 Vulkan SDK：
+
+    - Ubuntu 22.04
+
+    ``` bash
+    wget -qO- https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo tee /etc/apt/trusted.gpg.d/lunarg.asc
+    sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.3.261-jammy.list https://packages.lunarg.com/vulkan/1.3.261/lunarg-vulkan-1.3.261-jammy.list
+    sudo apt update
+    sudo apt install vulkan-sdk
+    ```
+    - Ubuntu 20.04
+
+    ``` bash
+    wget -qO - https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
+    sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.3.261-focal.list https://packages.lunarg.com/vulkan/1.3.261/lunarg-vulkan-1.3.261-focal.list
+    sudo apt update
+    sudo apt install vulkan-sdk
+    ```
 
 === "macOS"
 
     在 macOS 上，Vulkan SDK 的安装非常简单，只需要下载并运行[安装程序](https://sdk.lunarg.com/sdk/download/latest/mac/vulkan-sdk.dmg)即可。安装仅需要核心组件，其他组件没有必要勾选。
+
+
+## 验证安装
+
+安装完成后，你可以通过以下命令验证安装是否成功：
+
+``` bash
+vulkaninfo
+```
+
+如果安装成功，你应该能够看到一些 Vulkan 相关的信息。
+
+或者运行 Vulkan Cube 程序
+    
+``` bash
+vkcube
+```
+
+如果安装成功，你应该能够看到一个旋转的立方体。
