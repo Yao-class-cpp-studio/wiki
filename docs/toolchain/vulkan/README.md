@@ -14,7 +14,7 @@ Vulkan SDK 是 Vulkan 的官方开发工具包。大家可以通过以下介绍�
 
     在 Windows 上，Vulkan SDK 的安装非常简单，只需要下载并运行[安装程序](https://sdk.lunarg.com/sdk/download/latest/windows/vulkan-sdk.exe)即可。安装仅需要核心组件，其他组件没有必要勾选。
 
-    需要注意，Vulkan 是一个图形接口，在 WSL 中无法使用。如果你使用 WSL，那么你需要在 Windows 系统中安装 Vulkan SDK。
+    需要注意，Vulkan 是一个图形接口，需要调用显卡的硬件驱动支持，目前在 WSL 中无法使用。
 
     此外，MinGW 等非官方编译器可能无法使用 Vulkan SDK，因此我们推荐使用 Visual Studio。
 
