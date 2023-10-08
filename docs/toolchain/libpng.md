@@ -14,16 +14,55 @@ CMake搜索库的位置主要依靠`find_package()`函数实现，该函数需�
 
     `FetchContent`是CMake提供的一个自动下载其它库源代码的Module，类似的Module还有`ExternalProject`。
     
-    在`CMakeLists.txt`的`find_package()`函数前加入：
+    在作业的`CMakeLists.txt`中，将以下代码
 
     ```cmakelists
-    include(FetchContent) # 引入FetchContent Module
-    FetchContent_Declare(
-      libpng
-      GIT_REPOSITORY https://gitee.com/mirrors/libpng.git     # 为了保证国内可连接性，我们用了gitee的景象
-      GIT_TAG        f135775ad4e5d4408d2e12ffcc71bb36e6b48551 # 版本：1.6.40
-      OVERRIDE_FIND_PACKAGE                                   # 强制后续的find_package()使用下载的源码，而不是到系统中寻找
-    )
+    find_package(PNG REQUIRED)
+    include_directories(${PNG_INCLUDE_DIR})
+    target_link_libraries(main ${PNG_LIBRARY})
+    ```
+
+    替换为
+
+    ```cmakelists
+    # 在系统中寻找libpng
+    find_package(PNG QUIET)
+    
+    if(NOT PNG_FOUND)
+      message(STATUS "libpng not found, we will download it")
+      # 没找到，我们从源码编译
+    
+      include(FetchContent) # 引入FetchContent Module
+    
+      FetchContent_Declare(
+        zlib                                              # zlib是libpng的依赖，我们引入zlib
+        GIT_REPOSITORY https://gitee.com/mirrors/zlib.git # 为了保证国内可连接性，我们使用gitee的镜像
+        GIT_TAG 09155eaa2f9270dc4ed1fa13e2b4b2613e6e4851  # 版本：1.3
+      )
+      FetchContent_Declare(
+        libpng
+        GIT_REPOSITORY https://gitee.com/mirrors/libpng.git
+        GIT_TAG        f135775ad4e5d4408d2e12ffcc71bb36e6b48551 # 版本：1.6.40
+      )
+    
+      FetchContent_MakeAvailable(zlib) # 下载zlib
+      # 设置zlib的头文件和库，让libpng能找到
+      set(ZLIB_INCLUDE_DIRS ${zlib_SOURCE_DIR})
+      set(ZLIB_LIBRARIES zlibstatic)
+    
+      set(PNG_BUILD_ZLIB ON)             # 让libpng知道我们已经下载了zlib
+      set(SKIP_INSTALL_ALL ON)           # 不安装libpng，因为zlibstatic不能安装
+      FetchContent_MakeAvailable(libpng) # 下载libpng
+      set(PNG_INCLUDE_DIRS ${libpng_SOURCE_DIR} ${libpng_BINARY_DIR})
+      set(PNG_LIBRARIES png_static)
+    
+      # 变量的别名
+      set(PNG_INCLUDE_DIR ${PNG_INCLUDE_DIRS})
+      set(PNG_LIBRARY ${PNG_LIBRARIES})
+    endif()
+    
+    target_link_libraries(main PRIVATE ${PNG_LIBRARIES})
+    target_include_directories(main PRIVATE ${PNG_INCLUDE_DIRS})
     ```
 
 === "VS + vcpkg"
