@@ -4,6 +4,20 @@ vcpkg 是微软提供的一个用于管理 C/C++ 第三方库的工具，通常�
 
 vcpkg 仓库链接：[https://github.com/microsoft/vcpkg](https://github.com/microsoft/vcpkg)
 
+安装方法：clone该仓库到一个**不含中文名字**的路径，然后运行
+
+=== "Windows"
+  
+  ```cmd
+  .\vcpkg\bootstrap-vcpkg.bat
+  ```
+
+=== "Linux / MacOS / WSL"
+  
+  ```bash
+  ./vcpkg/bootstrap-vcpkg.sh
+  ```
+
 在提供好的作业框架中，同学们通常不需要自行配置什么，vcpkg 会在构建 CMake 工程的过程中自动部署，但由于系统环境原因可能会出现报错，需要同学们根据提示查看具体的报错信息。
 
 ## 已知问题
