@@ -69,9 +69,9 @@ CMake搜索库的位置主要依靠`find_package()`函数实现，该函数需�
 
     本配置需要Windows系统和Visual Studio。
  
-    1. 安装[Visual Studio](./environment#_7)最新版（Community版本免费）。
+    1. 安装[Visual Studio](../environment#_7)最新版（Community版本免费）。
     安装时，选择“使用C++的桌面开发”套件。
-    2. 安装[vcpkg](./vcpkg)。
+    2. 安装[vcpkg](../vcpkg)。
     3. 打开`cmd`或`powershell`，切换到vcpkg目录下：
 
         ```
