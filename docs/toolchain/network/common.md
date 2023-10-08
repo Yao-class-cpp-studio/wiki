@@ -129,3 +129,19 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```bash
 pip install <some-package> --proxy http://127.0.0.1:2333/
 ```
+
+### vcpkg
+
+Windows:
+
+```cmd
+set VCPKG_HTTP_PROXY="http://address:port"
+set VCPKG_HTTPS_PROXY="http://address:port"
+```
+
+Unix-Like OS (Linux, macOS, WSL):
+
+```bash
+export VCPKG_HTTP_PROXY="http://address:port"
+export VCPKG_HTTPS_PROXY="http://address:port"
+```
