@@ -45,18 +45,4 @@ vcpkg 需要从 GitHub 上下载源码，如果你的网络环境不好，可能
 
 如果你的梯子是全局代理，那么你可能不需要做任何事情。如果你的梯子是 PAC 代理，那么你可能需要手动设置代理地址。
 
-Windows:
-
-```
-set VCPKG_HTTP_PROXY="http://address:port"
-set VCPKG_HTTPS_PROXY="http://address:port"
-```
-
-Unix-Like OS (Linux, macOS, WSL):
-
-```
-export VCPKG_HTTP_PROXY="http://address:port"
-export VCPKG_HTTPS_PROXY="http://address:port"
-```
-
-使用镜像源的方法请自行通过搜索引擎查询。
+设置代理的方法见[常见软件代理设置](./network/common)，使用镜像源的方法请自行通过搜索引擎查询。
