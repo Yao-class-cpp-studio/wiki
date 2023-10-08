@@ -10,13 +10,29 @@
 CMake搜索库的位置主要依靠`find_package()`函数实现，该函数需要正确安装libpng到常用位置。
 我们提供几个比较典型的配置方案供参考。
 
+=== "CMake FetchContent"
+
+    `FetchContent`是CMake提供的一个自动下载其它库源代码的Module，类似的Module还有`ExternalProject`。
+    
+    在`CMakeLists.txt`的`find_package()`函数前加入：
+
+    ```cmakelists
+    include(FetchContent) # 引入FetchContent Module
+    FetchContent_Declare(
+      libpng
+      GIT_REPOSITORY https://gitee.com/mirrors/libpng.git     # 为了保证国内可连接性，我们用了gitee的景象
+      GIT_TAG        f135775ad4e5d4408d2e12ffcc71bb36e6b48551 # 版本：1.6.40
+      OVERRIDE_FIND_PACKAGE                                   # 强制后续的find_package()使用下载的源码，而不是到系统中寻找
+    )
+    ```
+
 === "VS + vcpkg"
 
     本配置需要Windows系统和Visual Studio。
  
-    1. 安装[Visual Studio](https://visualstudio.microsoft.com/)最新版（Community版本免费）。
+    1. 安装[Visual Studio](./environment#_7)最新版（Community版本免费）。
     安装时，选择“使用C++的桌面开发”套件。
-    2. 安装[vcpkg](https://github.com/microsoft/vcpkg)。可以用`git clone`下载或从网页上下载压缩包，然后解压到一个**不含中文**的路径。
+    2. 安装[vcpkg](./vcpkg)。
     3. 打开`cmd`或`powershell`，切换到vcpkg目录下：
 
         ```
