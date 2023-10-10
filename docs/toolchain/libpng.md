@@ -65,6 +65,21 @@ CMake搜索库的位置主要依靠`find_package()`函数实现，该函数需�
     target_include_directories(main PRIVATE ${PNG_INCLUDE_DIRS})
     ```
 
+    在上面的代码中，用到了git来下载源代码。如果你没有安装git，也可以使用以下URL下载（链接可能会失效）：
+
+    ```cmakelists
+    FetchContent_Declare(
+        zlib
+        URL http://www.zlib.net/zlib13.zip
+        URL_HASH SHA256=c561d09347f674f0d72692e7c75d9898919326c532aab7f8c07bb43b07efeb38
+    )
+    FetchContent_Declare(
+        libpng
+        URL https://jaist.dl.sourceforge.net/project/libpng/libpng16/1.6.40/lpng1640.zip
+        URL_HASH SHA256=0b05310afd15c4f5ccbbae13b4eec4573ee519dc1c76c411c8c10998ea93f107
+    )
+    ```
+
 === "VS + vcpkg"
 
     本配置需要Windows系统和Visual Studio。
