@@ -47,7 +47,7 @@ CMake搜索库的位置主要依靠`find_package()`函数实现，该函数需�
     
       FetchContent_MakeAvailable(zlib) # 下载zlib
       # 设置zlib的头文件和库，让libpng能找到
-      set(ZLIB_INCLUDE_DIRS ${zlib_SOURCE_DIR})
+      set(ZLIB_INCLUDE_DIRS ${zlib_SOURCE_DIR} ${zlib_BINARY_DIR})
       set(ZLIB_LIBRARIES zlibstatic)
     
       set(PNG_BUILD_ZLIB ON)             # 让libpng知道我们已经下载了zlib
