@@ -14,12 +14,14 @@ Vulkan SDK 是 Vulkan 的官方开发工具包。大家可以通过以下介绍�
 
     在 Windows 上，Vulkan SDK 的安装非常简单，只需要下载并运行[安装程序](https://sdk.lunarg.com/sdk/download/latest/windows/vulkan-sdk.exe)即可。安装仅需要核心组件，其他组件没有必要勾选。
 
-    需要注意，Vulkan 是一个图形接口，需要显卡的硬件驱动支持，目前在 WSL 中无法使用。（即便在 WSL 已经支持 CUDA 的情况下，Vulkan 依旧是不能在 WSL 中运行的）
+    需要注意，Vulkan 是一个图形接口，需要显卡的硬件驱动支持，目前在 WSL 中无法使用。（即便在 WSL 已经支持 CUDA 的情况下，Vulkan 依然是不能在 WSL 中运行的）
 
     此外，MinGW 等非官方编译器可能无法使用 Vulkan SDK，因此我们推荐使用 Visual Studio。
 
 === "Linux"
 
+    需要注意，Vulkan 是一个图形接口，需要显卡的硬件驱动支持，目前在 WSL 中无法使用。（即便在 WSL 已经支持 CUDA 的情况下，Vulkan 依然是不能在 WSL 中运行的）
+    
     - 通用方法
 
     在 Linux 上，Vulkan SDK 的安装稍微复杂一些，需要手动下载并解压缩。你可以通过如下脚本完成安装：
@@ -63,7 +65,7 @@ Vulkan SDK 是 Vulkan 的官方开发工具包。大家可以通过以下介绍�
 
 === "macOS"
 
-    在 macOS 上，Vulkan SDK 的安装非常简单，只需要下载并运行[安装程序](https://sdk.lunarg.com/sdk/download/latest/mac/vulkan-sdk.dmg)即可。安装仅需要核心组件，其他组件没有必要勾选。
+    在 macOS 上，Vulkan SDK 的安装非常简单，只需要下载并运行[安装程序](https://sdk.lunarg.com/sdk/download/latest/mac/vulkan-sdk.dmg)即可。安装除核心组件外，还需要勾选 "System Global Installation"，其他组件没有必要勾选。
 
 
 ## 验证安装
