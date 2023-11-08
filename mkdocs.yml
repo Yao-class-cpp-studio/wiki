@@ -65,6 +65,7 @@ nav:
   - Lectures:
     - "01 Intro to C": lectures/01.md
     - "02 C Basics": lectures/02.md
+    - "07 STL & Modern C++": lectures/07.md
   - Toolchain:
     - toolchain/README.md
     - 配置开发环境: toolchain/environment/README.md
