@@ -1,5 +1,9 @@
 # Project 1: JSON
 
+## 勘误
+
+- XPath的Array Index不带`[]`。例：`data/0/3/*/key/../value`
+
 ## FAQ
 
 - CI log是什么？
