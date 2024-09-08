@@ -5,7 +5,7 @@ title: Homepage
 # 编程入门（C/C++）
 
 <small>
-Fall 2023, Instructor: Huanchen Zhang
+Fall 2024, Instructor: Huanchen Zhang
 </small>
 
 !!! note ""
@@ -22,12 +22,13 @@ Fall 2023, Instructor: Huanchen Zhang
 
 <script>
     const schedule = {
-        'Assginment 1': ['2023/09/24 00:00:00 GMT+08:00', '2023/10/08 23:59:00 GMT+08:00'],
-        'Assginment 2': ['2023/10/08 00:00:00 GMT+08:00', '2023/10/22 23:59:00 GMT+08:00'],
-        'Assginment 3': ['2023/10/22 00:00:00 GMT+08:00', '2023/11/05 23:59:00 GMT+08:00'],
-        'Assginment 4': ['2023/11/05 00:00:00 GMT+08:00', '2023/11/19 23:59:00 GMT+08:00'],
-        'Project 1': ['2023/11/19 23:00:00 GMT+08:00', '2023/12/17 23:59:00 GMT+08:00'],
-        'Project 2': ['2023/12/27 23:00:00 GMT+08:00', '2024/01/21 23:59:00 GMT+08:00'],
+        'Homework 0': ['2024/09/15 00:00:00 GMT+08:00', '2024/09/22 23:59:00 GMT+08:00'],
+        'Homework 1': ['2024/09/22 00:00:00 GMT+08:00', '2024/10/06 23:59:00 GMT+08:00'],
+        'Homework 2': ['2024/10/06 00:00:00 GMT+08:00', '2024/10/20 23:59:00 GMT+08:00'],
+        'Homework 3': ['2024/10/20 00:00:00 GMT+08:00', '2024/11/03 23:59:00 GMT+08:00'],
+        'Homework 4': ['2024/11/03 00:00:00 GMT+08:00', '2024/11/17 23:59:00 GMT+08:00'],
+        'Project 1': ['2024/11/17 23:00:00 GMT+08:00', '2024/12/15 23:59:00 GMT+08:00'],
+        'Project 2': ['2024/12/15 23:00:00 GMT+08:00', '2025/01/12 23:59:00 GMT+08:00'],
     };
         function setTime() {
             const cur_date = new Date();
@@ -93,40 +94,43 @@ Fall 2023, Instructor: Huanchen Zhang
 <th>Week</th><th>Date</th><th>Lecture</th><th>Date</th><th>Homework & Projects</th>
 </tr>
 <tr markdown>
-<td>1</td><td>09/19</td><td>Course Overview & Introduction to C</td><td><time datetime="2023-09-24">09/24</time></td><td markdown>HW1 release</td>
+<td>1</td><td>09/10</td><td>Course Overview & Introduction to C</td><td><time datetime="2024/09/15">09/15</time></td><td markdown>HW0 release</td>
 </tr>
 <tr>
-<td>2</td><td>09/26</td><td>C Basics</td><td></td><td></td>
+<td>2</td><td>09/17</td><td>Holiday!⛱️ No Class</td><td><time datetime="2024/09/22">09/22</time></td><td>HW0 <strong>due</strong>, HW1 release</td>
 </tr>
 <tr>
-<td>3</td><td>10/03</td><td><strong>Holiday⛱️</strong></td><td>10/08</td><td>HW1 <strong>due</strong>, HW2 release</td>
-</tr>
-<tr markdown>
-<td>4</td><td>10/10</td><td>C Memory</td><td></td><td></td>
+<td>3</td><td>09/24</td><td>C Basics</td><td></td><td></td>
 </tr>
 <tr>
-<td>5</td><td>10/17</td><td>C Advanced</td><td>10/22</td><td>HW2 <strong>due</strong>, HW3 release</td>
-</tr>
-<tr markdown>
-<td>6</td><td>10/24</td><td>Object-Oriented Programming & C++</td><td></td><td></td>
+<td>4</td><td>10/01</td><td>Holiday!⛱️ No Class</td><td><time datetime="2024/10/06">10/06</time></td><td>HW1 <strong>due</strong>, HW2 release</td>
 </tr>
 <tr>
-<td>7</td><td>10/31</td><td>Inheritance & Polymorphism</td><td>11/05</td><td>HW3 <strong>due</strong>, HW4 release</td>
+<td>5</td><td>10/08</td><td>C Memory</td><td></td><td></td>
+</tr>
+<tr>
+<td>6</td><td>10/15</td><td>C Advanced</td><td><time datetime="2024/10/20">10/20</time></td><td>HW2 <strong>due</strong>, HW3 release</td>
 </tr>
 <tr markdown>
-<td>8</td><td>11/07</td><td>STL & Modern C++</td><td></td><td></td>
+<td>7</td><td>10/22</td><td>Object-Oriented Programming & C++</td><td></td><td></td>
+</tr>
+<tr>
+<td>8</td><td>10/29</td><td>Inheritance & Polymorphism</td><td>11/03</td><td>HW3 <strong>due</strong>, HW4 release</td>
 </tr>
 <tr markdown>
-<td>9</td><td>11/07</td><td>C++ Design Patterns</td><td>11/19</td><td>HW4 <strong>due</strong>, P1 release</td>
+<td>9</td><td>11/05</td><td>STL & Modern C++</td><td></td><td></td>
 </tr>
 <tr markdown>
-<td>10</td><td>11/14</td><td>Performance Fun!</td><td></td><td></td>
+<td>10</td><td>11/12</td><td>C++ Design Patterns</td><td>11/17</td><td>HW4 <strong>due</strong>, P1 release</td>
 </tr>
 <tr markdown>
-<td><strong>13</strong></td><td></td><td></td><td>12/17</td><td>P1 <strong>due</strong>, P2 release</td>
+<td>11</td><td>11/19</td><td>Performance Fun!</td><td></td><td></td>
 </tr>
 <tr markdown>
-<td><strong>18</strong></td><td></td><td></td><td>01/21</td><td markdown>P2 <strong>due</strong></td>
+<td><strong>14</strong></td><td></td><td></td><td>12/15</td><td>P1 <strong>due</strong>, P2 release</td>
+</tr>
+<tr markdown>
+<td><strong>18</strong></td><td></td><td></td><td>01/12</td><td markdown>P2 <strong>due</strong></td>
 </tr>
 </tbody>
 </table>
