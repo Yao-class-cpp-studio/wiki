@@ -59,10 +59,10 @@ extra_javascript:
   - https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.js
 nav:
   - Home: README.md
-  - Lectures:
-    - "01 Intro to C": lectures/01.md
-    - "02 C Basics": lectures/02.md
-    - "07 STL & Modern C++": lectures/07.md
+  # - Lectures:
+  #   - "01 Intro to C": lectures/01.md
+  #   - "02 C Basics": lectures/02.md
+  #   - "07 STL & Modern C++": lectures/07.md
   - Toolchain:
     - toolchain/README.md
     - 配置开发环境: toolchain/environment/README.md
