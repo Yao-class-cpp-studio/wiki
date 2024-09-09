@@ -103,28 +103,25 @@ Fall 2024, Instructor: Huanchen Zhang
 <td>3</td><td>09/24</td><td>C Basics</td><td></td><td></td>
 </tr>
 <tr>
-<td>4</td><td>10/01</td><td>Holiday!⛱️ No Class</td><td><time datetime="2024/10/06">10/06</time></td><td>HW1 <strong>due</strong>, HW2 release</td>
+<td>4</td><td><span style="color:red">09/29</span></td><td>C Memory</td><td><time datetime="2024/10/06">10/06</time></td><td>HW1 <strong>due</strong>, HW2 release</td>
 </tr>
 <tr>
-<td>5</td><td>10/08</td><td>C Memory</td><td></td><td></td>
+<td>5</td><td>10/08</td><td>C Advanced</td><td></td><td></td>
 </tr>
 <tr>
-<td>6</td><td>10/15</td><td>C Advanced</td><td><time datetime="2024/10/20">10/20</time></td><td>HW2 <strong>due</strong>, HW3 release</td>
+<td>6</td><td>10/15</td><td>Object-Oriented Programming & C++</td><td><time datetime="2024/10/20">10/20</time></td><td>HW2 <strong>due</strong>, HW3 release</td>
 </tr>
 <tr markdown>
-<td>7</td><td>10/22</td><td>Object-Oriented Programming & C++</td><td></td><td></td>
+<td>7</td><td>10/22</td><td>Inheritance & Polymorphism</td><td></td><td></td>
 </tr>
 <tr>
-<td>8</td><td>10/29</td><td>Inheritance & Polymorphism</td><td>11/03</td><td>HW3 <strong>due</strong>, HW4 release</td>
+<td>8</td><td>10/29</td><td>STL & Modern C++</td><td>11/03</td><td>HW3 <strong>due</strong>, HW4 release</td>
 </tr>
 <tr markdown>
-<td>9</td><td>11/05</td><td>STL & Modern C++</td><td></td><td></td>
+<td>9</td><td>11/05</td><td>C++ Design Patterns</td><td></td><td></td>
 </tr>
 <tr markdown>
-<td>10</td><td>11/12</td><td>C++ Design Patterns</td><td>11/17</td><td>HW4 <strong>due</strong>, P1 release</td>
-</tr>
-<tr markdown>
-<td>11</td><td>11/19</td><td>Performance Fun!</td><td></td><td></td>
+<td>10</td><td>11/12</td><td>Performance Fun!</td><td>11/17</td><td>HW4 <strong>due</strong>, P1 release</td>
 </tr>
 <tr markdown>
 <td><strong>14</strong></td><td></td><td></td><td>12/15</td><td>P1 <strong>due</strong>, P2 release</td>
