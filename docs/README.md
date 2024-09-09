@@ -140,6 +140,7 @@ Fall 2024, Instructor: Huanchen Zhang
 This site would not have been possible without the effort from Prof. Huanchen Zhang, the TA team, the amazing open source projects:
 
 * [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+* [UOJ](https://github.com/vfleaking/uoj) and its [community version](https://github.com/UniversalOJ/UOJ-System)
 * Clang/LLD in WebAssembly: [binji/wasm-clang](https://github.com/binji/wasm-clang)
 * [Mathjax](https://www.mathjax.org/)
 * [Asciinema](https://asciinema.org/)
