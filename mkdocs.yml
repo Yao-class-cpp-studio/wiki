@@ -83,10 +83,10 @@ nav:
       - 高阶-多远程管理: toolchain/git/remote.md
       - 高阶-修改历史: toolchain/git/history.md
       - 参考-Git命令速查表: toolchain/git/cheatsheet.md
-    - Conda: toolchain/conda/README.md
     - CMake: toolchain/cmake.md
+    - Conda: toolchain/conda/README.md
     - Vulkan SDK: toolchain/vulkan/README.md
-    - libpng: toolchain/libpng.md
+    # - libpng: toolchain/libpng.md
     - vcpkg: toolchain/vcpkg.md
     - Grassland: toolchain/grassland/README.md
   # - Assignments:
