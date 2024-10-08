@@ -3,6 +3,12 @@
 本文是常见软件代理设置的速查表，
 下面均假设代理服务器地址为 `http://127.0.0.1:2333/`，实际使用时请替换为自己环境中的地址。
 
+## Windows全局代理
+
+Windows下许多软件都会直接读取系统设置的代理，比较方便。不少VPN软件也会直接修改这个代理。
+
+操作流程如下：打开设置->网络和Internet->代理->手动设置代理。Windows 10开始控制面板的UI变动频繁，但是大致差不多。
+
 ## git
 
 在命令行中输入
@@ -36,7 +42,7 @@ git config --global https.proxy http://127.0.0.1:2333/
 
 那么对于`https://gitee.com`或`https://git.tsinghua.edu.cn`等网站，就不会使用代理。
 
-### curl
+## curl
 
 在执行命令的时候加一个选项：
 
@@ -50,7 +56,7 @@ curl https://example.com --proxy http://127.0.0.1:2333/
 proxy=http://127.0.0.1:2333/
 ```
 
-### apt
+## apt
 
 新建一个`proxy.conf`：
 
@@ -65,7 +71,7 @@ Acquire::https::Proxy "http://127.0.0.1:2333/";
 apt -c proxy.conf
 ```
 
-### wget
+## wget
 
 在`~/.wgetrc`中添加：
 
@@ -75,7 +81,7 @@ http_proxy=http://127.0.0.1:2333/
 https_proxy=http://127.0.0.1:2333/
 ```
 
-### golang
+## golang
 
 在执行go相关的命令前运行：
 
@@ -85,7 +91,7 @@ export GOPROXY=https://proxy.golang.com.cn,direct
 
 更多信息请见[https://goproxy.io/zh/](https://goproxy.io/zh/).
 
-### conda
+## conda
 
 清华有[conda的镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)。
 如果使用清华的镜像站，只需要向`~/.condarc`添加：
@@ -108,7 +114,7 @@ proxy_servers:
     https: http://127.0.0.1:2333/
 ```
 
-### pip / PyPI
+## pip / PyPI
 
 清华提供了[PyPI镜像](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)。
 
@@ -130,7 +136,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip install <some-package> --proxy http://127.0.0.1:2333/
 ```
 
-### vcpkg
+## vcpkg
 
 Windows:
 
