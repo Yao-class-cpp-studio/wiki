@@ -5,9 +5,10 @@ title: Homepage
 # 编程入门（C/C++）
 
 <small>
-Fall 2024, Instructor: Huanchen Zhang
+Fall 2025, Instructor: Huanchen Zhang
 </small>
 
+<!--
 !!! note ""
 
     <span id="ongoing" markdown style="display:none;">
@@ -131,6 +132,7 @@ Fall 2024, Instructor: Huanchen Zhang
 </tr>
 </tbody>
 </table>
+-->
 
 ## About
 
