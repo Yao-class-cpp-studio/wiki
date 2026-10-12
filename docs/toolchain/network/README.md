@@ -1,3 +1,12 @@
+# 合规上网，健康生活
+
+校园网访问 [https://scholar.edu.cn/](https://scholar.edu.cn/) 并下载专用浏览器即可访问各类网站。请注意，该访问方式有严格白名单和访问记录，请注意遵守相关法律法规。
+
+部分软件可以配置国内镜像：
+
+- Docker: [docker.1ms.run](https://1ms.run/)
+- [清华开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
+
 # 网络基础
 
 > 这一篇教程将为大家介绍互联网的基础概念，希望能提高大家上网冲浪的技能水平。
