@@ -4,7 +4,7 @@
 
 - 按win键，输入`cmd`，回车打开
     ![](./cmd.png)
-- 输入`wsl install`，等待安装完成
+- 输入`wsl --install`，等待安装完成。WSL是Docker需要的组件。
 - 安装Docker Windows
     - 可以选择在Microsoft Store中安装：[链接](https://apps.microsoft.com/detail/xp8cbj40xlbwkx)
     - 或使用我们下载的安装包：[链接](https://cloud.tsinghua.edu.cn/d/8928c3deb4d6424a8bea/)
