@@ -59,7 +59,7 @@ IDE能够提供代码高亮、自动补全、优化代码格式、代码分析�
 事先声明：对于各种编辑器和IDE的优劣评价，是编程领域经久不衰的吵架话题。我在此仅主观地为⼤家介绍⼀些
 常⽤的IDE（当然，我的观点也是⽬前较主流的观点）。
 
-1. ⾸先推荐的IDE是: Clion (https://www.jetbrains.com/clion/). Clion是Jetbrains系列的软件之⼀，其功能⾮常强⼤，⽆论是mac还是windows系统，它都是⼤型 C++ 项⽬开发者⾸选的主流IDE。Clion理论上对学⽣免费，但是我⽬前并不确定⼤家的清华邮箱还能否认证成功 (https://www.jetbrains.com/community/education/#students)。如果⼤家的认证存在较多麻烦问题，可以考虑使⽤其他的IDE（或者问助教找妙招）。
+1. ⾸先推荐的IDE是: Clion (https://www.jetbrains.com/clion/). Clion是Jetbrains系列的软件之⼀，其功能⾮常强⼤，⽆论是mac还是windows系统，它都是⼤型 C++ 项⽬开发者⾸选的主流IDE。Clion理论上对学⽣免费，但是我⽬前并不确定⼤家的清华邮箱还能否认证成功 (https://www.jetbrains.com/community/education/#students)。如果⼤家的认证存在较多麻烦问题，可以考虑使⽤其他的IDE（或者问助教找妙招）。补充：2025年5月，JetBrains宣布允许Clion[免费用于非商业用途](https://blog.jetbrains.com/clion/2025/05/clion-is-now-free-for-non-commercial-use/)，到JetBrains官网[注册账号](https://account.jetbrains.com)后即可免费使用。
 
     Clion的安装和配置教程可以⾃⾏在⽹上搜索，相关资源⾮常多，⽐如（https://blog.51cto.com/u_15049778/3946377）。
 
